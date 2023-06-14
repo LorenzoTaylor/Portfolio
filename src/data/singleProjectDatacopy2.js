@@ -66,22 +66,22 @@ export const singleProjectData = {
 			{
 				id: 1,
 				details:
-					'...',
+					'',
 			},
 			{
 				id: 2,
 				details:
-					'...',
+					'',
 			},
 			{
 				id: 3,
 				details:
-					'...',
+					'',
 			},
 			{
 				id: 4,
 				details:
-					'...',
+					'',
 			},
 		],
 		SocialSharingHeading: 'Share This',

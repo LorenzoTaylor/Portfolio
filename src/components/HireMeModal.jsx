@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
 import Button from './reusable/Button';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const selectOptions = [
 	'Web Application',
@@ -9,6 +11,20 @@ const selectOptions = [
 ];
 
 const HireMeModal = ({ onClose, onRequest }) => {
+	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		emailjs.sendForm('service_eeivshl', 'template_nwupky7', form.current, 'aIQngDfUd9vT-qoiu')
+		.then((result) => {
+			console.log(result.text);
+			e.target.reset();
+		}, (error) => {
+			console.log(error.text);
+		});
+	};
+	
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -25,7 +41,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 					<div className="modal max-w-md mx-5 xl:max-w-xl lg:max-w-xl md:max-w-xl bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-lg relative">
 						<div className="modal-header flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark">
 							<h5 className=" text-primary-dark dark:text-primary-light text-xl">
-								Contact Me?            
+								Feel Free To Contact Me?            
 							</h5>
 							<button
 								onClick={onClose}
@@ -36,16 +52,15 @@ const HireMeModal = ({ onClose, onRequest }) => {
 						</div>
 						<div className="modal-body p-5 w-full h-full">
 							<form
-								onSubmit={(e) => {
-									e.preventDefault();
-								}}
+								ref={form}
+								onSubmit={sendEmail}
 								className="max-w-xl m-4 text-left"
 							>
 								<div className="">
 									<input
 										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="name"
-										name="name"
+										name="user_name"
 										type="text"
 										required=""
 										placeholder="Name"
@@ -56,7 +71,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 									<input
 										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="email"
-										name="email"
+										name="user_email"
 										type="text"
 										required=""
 										placeholder="Email"
@@ -67,7 +82,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 									<select
 										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="subject"
-										name="subject"
+										name="user_subject"
 										type="text"
 										required=""
 										aria-label="Project Category"
@@ -98,7 +113,6 @@ const HireMeModal = ({ onClose, onRequest }) => {
 								<div className="mt-6 pb-4 sm:pb-1">
 									<span
 										onClick={onClose}
-										type="submit"
 										className="px-4
 											sm:px-6
 											py-2
@@ -110,7 +124,10 @@ const HireMeModal = ({ onClose, onRequest }) => {
 											focus:ring-1 focus:ring-indigo-900 duration-500"
 										aria-label="Submit Request"
 									>
-										<Button title="Send Request" />
+										<Button 
+										type="submit"
+										value="Send"
+										title="Send Request" />
 									</span>
 								</div>
 							</form>

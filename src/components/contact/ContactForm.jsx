@@ -1,14 +1,29 @@
 import Button from '../reusable/Button';
 import FormInput from '../reusable/FormInput';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
+	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		emailjs.sendForm('service_eeivshl', 'template_nwupky7', form.current, 'aIQngDfUd9vT-qoiu')
+		.then((result) => {
+			console.log(result.text);
+			e.target.reset();
+		}, (error) => {
+			console.log(error.text);
+		});
+	};
+
 	return (
 		<div className="w-full lg:w-1/2">
 			<div className="leading-loose">
 				<form
-					onSubmit={(e) => {
-						e.preventDefault();
-					}}
+					ref={form}
+					onSubmit={sendEmail}
 					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
 				>
 					<p className="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">
@@ -22,6 +37,8 @@ const ContactForm = () => {
 						inputName="name"
 						placeholderText="Your Name"
 						ariaLabelName="Name"
+						type="text" 
+						name="user_name"
 					/>
 					<FormInput
 						inputLabel="Email"
@@ -31,6 +48,8 @@ const ContactForm = () => {
 						inputName="email"
 						placeholderText="Your email"
 						ariaLabelName="Email"
+						type="email" 
+						name="user_email"
 					/>
 					<FormInput
 						inputLabel="Subject"
@@ -40,6 +59,7 @@ const ContactForm = () => {
 						inputName="subject"
 						placeholderText="Subject"
 						ariaLabelName="Subject"
+						name="user_subject"
 					/>
 
 					<div className="mt-6">
@@ -64,6 +84,7 @@ const ContactForm = () => {
 							title="Send Message"
 							type="submit"
 							aria-label="Send Message"
+							value="Send"
 						/>
 					</div>
 				</form>
