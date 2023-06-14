@@ -1,7 +1,6 @@
 import ProjectGallery from '../components/projects/ProjectGalleryThird';
 import ProjectHeader from '../components/projects/ProjectHeaderThird';
 import ProjectInfo from '../components/projects/ProjectInfoThird';
-import ProjectRelatedProjects from '../components/projects/ProjectRelatedProjects';
 import { SingleProjectProvider } from '../context/ThirdProjectContext';
 import { motion } from 'framer-motion';
 
