@@ -40,7 +40,7 @@ export const singleProjectData = {
 			{
 				id: 1,
 				title: 'Name',
-				details: "Lorenzo's Cleaners",
+				details: "Earth",
 			},
 			{
 				id: 2,
@@ -84,7 +84,7 @@ export const singleProjectData = {
 					'',
 			},
 		],
-		SocialSharingHeading: 'Share This',
+		SocialSharingHeading: 'Links',
 		SocialSharing: [
 			{
 				id: 1,

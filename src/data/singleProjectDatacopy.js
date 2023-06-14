@@ -83,7 +83,7 @@ export const singleProjectData = {
 					'',
 			},
 		],
-		SocialSharingHeading: 'Share This',
+		SocialSharingHeading: 'Links',
 		SocialSharing: [
 			{
 				id: 1,
