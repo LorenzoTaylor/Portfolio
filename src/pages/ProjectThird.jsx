@@ -1,8 +1,8 @@
-import ProjectGallery from '../components/projects/ProjectGallery';
-import ProjectHeader from '../components/projects/ProjectHeader';
-import ProjectInfo from '../components/projects/ProjectInfo';
+import ProjectGallery from '../components/projects/ProjectGalleryThird';
+import ProjectHeader from '../components/projects/ProjectHeaderThird';
+import ProjectInfo from '../components/projects/ProjectInfoThird';
 import ProjectRelatedProjects from '../components/projects/ProjectRelatedProjects';
-import { SingleProjectProvider } from '../context/SingleProjectContext';
+import { SingleProjectProvider } from '../context/ThirdProjectContext';
 import { motion } from 'framer-motion';
 
 const ProjectSingle = () => {
@@ -21,7 +21,6 @@ const ProjectSingle = () => {
 				<ProjectHeader />
 				<ProjectGallery />
 				<ProjectInfo />
-				<ProjectRelatedProjects />
 			</SingleProjectProvider>
 		</motion.div>
 	);

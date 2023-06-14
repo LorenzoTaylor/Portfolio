@@ -1,20 +1,25 @@
 // Import images
-import Image1 from "../images/Lorenzo's Cleaners.png";
-import Image2 from "../images/Lorenzo's Cleaners (1).png";
-import Image3 from "../images/Lorenzo's Cleaners (2).png";
+import Image1 from "../images/Earth (1).png";
+import Image2 from "../images/Earth (2).png";
+import Image3 from "../images/Earth (3).png";
 import Image4 from '../images/mobile-project-1.jpg';
 import Image5 from '../images/web-project-1.jpg';
 import Image6 from '../images/ui-project-2.jpg';
 // Import icons
 import {
+	FiFacebook,
 	FiGithub,
 	FiGlobe,
+	FiInstagram,
+	FiLinkedin,
+	FiTwitter,
+	FiYoutube,
 } from 'react-icons/fi';
 
 export const singleProjectData = {
 	ProjectHeader: {
-		title: 'Cleaning App Frontend',
-		publishDate: 'May 2023',
+		title: 'Earth',
+		publishDate: 'May 2022',
 		tags: 'Frontend',
 	},
 	ProjectImages: [
@@ -50,14 +55,14 @@ export const singleProjectData = {
 		],
 		ObjectivesHeading: 'Objective',
 		ObjectivesDetails:
-			'Creating the front end portion of a site that provides cleaning services.',
+			'Creating a short climate change info website.',
 		Technologies: [
 			{
 				title: 'Tools & Technologies',
 				techs: [
 					'JavaScript',
-					'React.js',
-					'styled-components',
+					'HTML',
+					'CSS',
 				],
 			},
 		],
@@ -66,39 +71,38 @@ export const singleProjectData = {
 			{
 				id: 1,
 				details:
-					'Welcome to Lorenzos Cleaners - the ultimate platform for booking professional cleaners right at your doorstep! Our innovative website, built from scratch using React and styled-components, provides a seamless experience for users to effortlessly schedule cleaning services for their homes.',
+					'...',
 			},
 			{
 				id: 2,
 				details:
-					'Next, I plan to focus on integrating Stripe, a trusted and secure payment processing system, to make the booking and payment process even smoother. In the next phase of the project, i will implement the Stripe integration, enabling customers to make quick and secure payments directly on the website. Additionally, I plan to enhance the user experience by introducing features such as personalized cleaning plans, real-time status updates, and an updated customer support system for any inquiries or concerns.',
+					'...',
 			},
 			{
 				id: 3,
 				details:
-					'',
+					'...',
 			},
 			{
 				id: 4,
 				details:
-					'',
+					'...',
 			},
 		],
-		SocialSharingHeading: 'Links',
+		SocialSharingHeading: 'Share This',
 		SocialSharing: [
 			{
 				id: 1,
 				name: 'Twitter',
 				icon: <FiGithub />,
-				url: 'https://github.com/LorenzoTaylor/Cleaners',
+				url: 'https://github.com/LorenzoTaylor/Earth',
 			},
 			{
 				id: 2,
 				name: 'Instagram',
 				icon: <FiGlobe />,
-				url: 'https://cleaners-rose.vercel.app/',
+				url: 'https://earth.lorenzotaylor.repl.co',
 			},
-			
 		],
 	},
 	RelatedProject: {

@@ -1,54 +1,54 @@
 // Import images
-import AmazonImage from '../images/brands/amazon_gray.png';
-import SonyImage from '../images/brands/sony_gray.png';
-import AdidasImage from '../images/brands/adidas_gray.png';
-import FilaImage from '../images/brands/fila_gray.png';
-import NBImage from '../images/brands/nb_gray.png';
-import SamsungImage from '../images/brands/samsung_gray.png';
-import CanonImage from '../images/brands/canon_gray.png';
-import PumaImage from '../images/brands/puma_gray.png';
+import ReactImage from '../images/React-Image.png';
+import JSImage from '../images/JsImage.png';
+import HtmlImage from '../images/htmlImage.png';
+import CssImage from '../images/CSSImage.png';
+import GitImage from '../images/GitImage.png';
+import ViteImage from '../images/ViteImage.png';
+import JestImage from '../images/JestImage.png';
+import StackImage from '../images/StackImage.png';
 
-export const clientsHeading = 'Some of the brands that trust me';
+export const clientsHeading = 'Some Technologies I';
 
 export const clientsData = [
 	{
 		id: 1,
 		title: 'Amazon',
-		img: AmazonImage,
+		img: ReactImage,
 	},
 	{
 		id: 2,
 		title: 'Sony',
-		img: SonyImage,
+		img: JSImage,
 	},
 	{
 		id: 3,
 		title: 'Adidas',
-		img: AdidasImage,
+		img: HtmlImage,
 	},
 	{
 		id: 4,
 		title: 'FILA',
-		img: FilaImage,
+		img: CssImage,
 	},
 	{
 		id: 5,
 		title: 'NB',
-		img: NBImage,
+		img: GitImage,
 	},
 	{
 		id: 6,
 		title: 'SAMSUNG',
-		img: SamsungImage,
+		img: ViteImage,
 	},
 	{
 		id: 7,
 		title: 'CANON',
-		img: CanonImage,
+		img: JestImage,
 	},
 	{
 		id: 8,
 		title: 'PUMA',
-		img: PumaImage,
+		img: StackImage,
 	},
 ];

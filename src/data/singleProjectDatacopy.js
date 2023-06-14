@@ -7,15 +7,20 @@ import Image5 from '../images/web-project-1.jpg';
 import Image6 from '../images/ui-project-2.jpg';
 // Import icons
 import {
+	FiFacebook,
 	FiGithub,
 	FiGlobe,
+	FiInstagram,
+	FiLinkedin,
+	FiTwitter,
+	FiYoutube,
 } from 'react-icons/fi';
 
 export const singleProjectData = {
 	ProjectHeader: {
-		title: 'Cleaning App Frontend',
-		publishDate: 'May 2023',
-		tags: 'Frontend',
+		title: 'EnronDS Search',
+		publishDate: 'january 2023',
+		tags: 'Data',
 	},
 	ProjectImages: [
 		{
@@ -40,24 +45,24 @@ export const singleProjectData = {
 			{
 				id: 1,
 				title: 'Name',
-				details: "Lorenzo's Cleaners",
+				details: "EnronDS Search",
 			},
 			{
 				id: 2,
 				title: 'Services',
-				details: 'UI Design & Frontend Development',
+				details: 'Data Analytics',
 			},
 		],
 		ObjectivesHeading: 'Objective',
 		ObjectivesDetails:
-			'Creating the front end portion of a site that provides cleaning services.',
+			'Search the Enron email database to create a graph of connections between emails.',
 		Technologies: [
 			{
 				title: 'Tools & Technologies',
 				techs: [
 					'JavaScript',
-					'React.js',
-					'styled-components',
+					'HTML',
+					'CSS',
 				],
 			},
 		],
@@ -66,12 +71,12 @@ export const singleProjectData = {
 			{
 				id: 1,
 				details:
-					'Welcome to Lorenzos Cleaners - the ultimate platform for booking professional cleaners right at your doorstep! Our innovative website, built from scratch using React and styled-components, provides a seamless experience for users to effortlessly schedule cleaning services for their homes.',
+					'Introducing EnronDS Search, a powerful tool I created as part of my portfolio to analyze the massive Enron email database. With EnronDS Search, users can delve into the extensive network of connections within the Enron organization and gain valuable insights into email interactions and team dynamics. ',
 			},
 			{
 				id: 2,
 				details:
-					'Next, I plan to focus on integrating Stripe, a trusted and secure payment processing system, to make the booking and payment process even smoother. In the next phase of the project, i will implement the Stripe integration, enabling customers to make quick and secure payments directly on the website. Additionally, I plan to enhance the user experience by introducing features such as personalized cleaning plans, real-time status updates, and an updated customer support system for any inquiries or concerns.',
+					'By leveraging a graph data structure in java, EnronDS Search allows users to search for a specific email address within the Enron email database. Once a target email is entered, the application swiftly scans the database and constructs a dynamic graph of nodes, representing individuals, with over 400,000 connections.',
 			},
 			{
 				id: 3,
@@ -84,21 +89,14 @@ export const singleProjectData = {
 					'',
 			},
 		],
-		SocialSharingHeading: 'Links',
+		SocialSharingHeading: 'Share This',
 		SocialSharing: [
 			{
 				id: 1,
 				name: 'Twitter',
 				icon: <FiGithub />,
-				url: 'https://github.com/LorenzoTaylor/Cleaners',
+				url: 'https://github.com/LorenzoTaylor/EnronSearch',
 			},
-			{
-				id: 2,
-				name: 'Instagram',
-				icon: <FiGlobe />,
-				url: 'https://cleaners-rose.vercel.app/',
-			},
-			
 		],
 	},
 	RelatedProject: {

@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import SingleProjectContext from '../../context/SingleProjectContext';
+import SingleProjectContext from '../../context/SecondProjectContext';
 
 const ProjectInfo = () => {
 	const { singleProjectData } = useContext(SingleProjectContext);
@@ -41,7 +41,7 @@ const ProjectInfo = () => {
 				</div>
 				{/* Single project social sharing */}
 				<div>
-					<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light my-2">
+					<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
 						{singleProjectData.ProjectInfo.SocialSharingHeading}
 					</p>
 					<div className="flex items-center gap-3 mt-5">
