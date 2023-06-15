@@ -1,6 +1,4 @@
 // Import images
-import Image1 from "../images/Lorenzo's Cleaners.png";
-import Image2 from "../images/Lorenzo's Cleaners (1).png";
 import Image3 from "../images/Lorenzo's Cleaners (2).png";
 import Image4 from '../images/mobile-project-1.jpg';
 import Image5 from '../images/web-project-1.jpg';
@@ -17,7 +15,7 @@ export const singleProjectData = {
 		tags: 'Data',
 	},
 	ProjectImages: [
-		{
+		{/*{
 			id: 1,
 			title: 'Kabul Project Management I',
 			img: Image1,
@@ -31,7 +29,7 @@ export const singleProjectData = {
 			id: 3,
 			title: 'Kabul Project Management I',
 			img: Image3,
-		},
+		},*/}
 	],
 	ProjectInfo: {
 		ClientHeading: 'About',
