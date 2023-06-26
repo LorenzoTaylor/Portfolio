@@ -3,7 +3,7 @@ import AboutMeContext from '../../context/AboutMeContext';
 import AboutClientSingle from './AboutClientSingle';
 
 const AboutClients = () => {
-	const { clientsData, clientsHeading } = useContext(AboutMeContext);
+	const { clientsData} = useContext(AboutMeContext);
 
 	return (
 		<div className="mt-10 sm:mt-20">

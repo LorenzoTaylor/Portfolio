@@ -1,21 +1,24 @@
 // Import images
-import Image3 from "../images/Lorenzo's Cleaners (2).png";
+import Image1 from "../images/HTML Email Template.png";
+import Image2 from "../images/HTML Email Template (1).png";
+import Image3 from "../images/HTML Email Template (2).png";
 import Image4 from '../images/mobile-project-1.jpg';
 import Image5 from '../images/web-project-1.jpg';
 import Image6 from '../images/ui-project-2.jpg';
 // Import icons
 import {
 	FiGithub,
+	FiGlobe,
 } from 'react-icons/fi';
 
 export const singleProjectData = {
 	ProjectHeader: {
-		title: 'EnronDS Search',
-		publishDate: 'january 2023',
-		tags: 'Data',
+		title: 'HTML Email Template',
+		publishDate: 'May 2023',
+		tags: 'Frontend',
 	},
 	ProjectImages: [
-		{/*{
+		{
 			id: 1,
 			title: 'Kabul Project Management I',
 			img: Image1,
@@ -29,31 +32,17 @@ export const singleProjectData = {
 			id: 3,
 			title: 'Kabul Project Management I',
 			img: Image3,
-		},*/}
+		},
 	],
 	ProjectInfo: {
-		ClientHeading: 'About',
-		CompanyInfo: [
-			{
-				id: 1,
-				title: 'Name',
-				details: "EnronDS Search",
-			},
-			{
-				id: 2,
-				title: 'Services',
-				details: 'Data Analytics',
-			},
-		],
 		ObjectivesHeading: 'Objective',
 		ObjectivesDetails:
-			'Search the Enron email database to create a graph of connections between emails.',
+			'Creating a production level HTML Email Template.',
 		Technologies: [
 			{
 				title: 'Tools & Technologies',
 				techs: [
-					'JavaScript',
-					'HTML',
+					'HTML Tables',
 					'CSS',
 				],
 			},
@@ -63,17 +52,17 @@ export const singleProjectData = {
 			{
 				id: 1,
 				details:
-					'Introducing EnronDS Search, a powerful tool I created as part of my portfolio to analyze the massive Enron email database. With EnronDS Search, users can delve into the extensive network of connections within the Enron organization and gain valuable insights into email interactions and team dynamics. ',
+					'The HTML Email Portfolio project I completed was designed with a jewelry companys sales campaign in mind. The email template incorporated various sections to showcase the companys products and promote their ongoing sales. The template featured a professional and visually appealing design to attract and engage the target audience.',
 			},
 			{
 				id: 2,
 				details:
-					'By leveraging a graph data structure in java, EnronDS Search allows users to search for a specific email address within the Enron email database. Once a target email is entered, the application swiftly scans the database and constructs a dynamic graph of nodes, representing individuals, with over 400,000 connections.',
+					'Overall, the HTML Email Portfolio project successfully presented the jewelry companys sales campaign in an engaging and visually appealing manner. The template effectively showcased their products, promoted their discounts, and encouraged recipients to explore and make purchases from the companys website.',
 			},
 			{
 				id: 3,
 				details:
-					'',
+					'Please check out the full HTML Email Portfolio project to see how it works by clicking the globe icon.',
 			},
 			{
 				id: 4,
@@ -81,14 +70,21 @@ export const singleProjectData = {
 					'',
 			},
 		],
-		SocialSharingHeading: 'Links',
+		SocialSharingHeading: 'View Project',
 		SocialSharing: [
 			{
 				id: 1,
 				name: 'Twitter',
 				icon: <FiGithub />,
-				url: 'https://github.com/LorenzoTaylor/EnronSearch',
+				url: 'https://github.com/LorenzoTaylor/GldHtmlEmail',
 			},
+			{
+				id: 2,
+				name: 'Instagram',
+				icon: <FiGlobe />,
+				url: 'https://gld-html-email.vercel.app/',
+			},
+			
 		],
 	},
 	RelatedProject: {

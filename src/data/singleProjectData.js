@@ -76,7 +76,7 @@ export const singleProjectData = {
 			{
 				id: 3,
 				details:
-					'',
+				'Please check out the full HTML Email Portfolio project to see how it works by clicking the globe icon.',
 			},
 			{
 				id: 4,
@@ -84,7 +84,7 @@ export const singleProjectData = {
 					'',
 			},
 		],
-		SocialSharingHeading: 'Links',
+		SocialSharingHeading: 'View Project',
 		SocialSharing: [
 			{
 				id: 1,

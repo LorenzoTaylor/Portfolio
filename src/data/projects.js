@@ -1,10 +1,7 @@
 // Import images
 import WebImage1 from "../images/Lorenzo's Cleaners.png";
-import WebImage2 from '../images/web-project-2.jpg';
-import MobileImage1 from '../images/mobile-project-1.jpg';
-import MobileImage2 from '../images/Enron.jpg';
-import UIImage1 from '../images/Earth (1).png';
-import UIImage2 from '../images/ui-project-2.jpg';
+import MobileImage2 from '../images/HTML Email Template.png';
+import UIImage1 from '../images/Enron.jpg';
 
 export const projectsData = [
 	{
@@ -22,10 +19,10 @@ export const projectsData = [
 	},
 	{
 		id: 2,
-		title: 'EnronDS Search',
-		category: 'Data Analytics',
+		title: 'HTML Email Template',
+		category: 'Front End Web Application',
 		img: MobileImage2,
-		link:'',
+		link:'https://gld-html-email.vercel.app/',
 		projectto:'projects/second-project',
 		ProjectHeader: {
 			title: '',
@@ -35,8 +32,8 @@ export const projectsData = [
 	},
 	{
 		id: 3,
-		title: 'Earth',
-		category: 'Front End Web Application',
+		title: 'EnronDS Search',
+		category: 'Data Analytics',
 		img: UIImage1,
 		link:'',
 		projectto:'projects/third-project',
