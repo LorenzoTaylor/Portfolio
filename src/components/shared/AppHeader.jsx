@@ -7,6 +7,7 @@ import logoLight from '../../images/Z (1).png';
 import logoDark from '../../images/Z.png';
 import { motion } from 'framer-motion';
 import Button from '../reusable/Button';
+import './AppHeader.css'
 
 const AppHeader = () => {
 	const [showMenu, setShowMenu] = useState(false);
@@ -37,14 +38,12 @@ const AppHeader = () => {
 
 	return (
 		<motion.nav
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
 			id="nav"
-			className="sm:container sm:mx-auto"
+			className="navClass sm:container sm:mx-auto"
 		>
-			<div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
+			<div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:items-left py-6">
 				{/* Header menu links and small screen hamburger menu */}
-				<div className="flex justify-between items-center px-4 sm:px-0">
+				<div className="flex items-left px-4 sm:px-0">
 					<div>
 						<Link to="/">
 							{activeTheme === 'dark' ? (
@@ -54,9 +53,9 @@ const AppHeader = () => {
 									alt="Dark Logo"
 								/>
 							) : (
-								<img
+								<img 
 									src={logoLight}
-									className="w-36"
+									className="navClass w-36"
 									alt="Dark Logo"
 								/>
 							)}
@@ -67,7 +66,7 @@ const AppHeader = () => {
 					<div
 						onClick={() => setTheme(activeTheme)}
 						aria-label="Theme Switcher"
-						className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
+						className="navClass block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
 					>
 						{activeTheme === 'dark' ? (
 							<FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />
@@ -77,17 +76,17 @@ const AppHeader = () => {
 					</div>
 
 					{/* Small screen hamburger menu */}
-					<div className="sm:hidden">
+					<div className="navClass sm:hidden">
 						<button
 							onClick={toggleMenu}
 							type="button"
-							className="focus:outline-none"
+							className="navClass focus:outline-none"
 							aria-label="Hamburger Menu"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 24 24"
-								className="h-7 w-7 fill-current text-secondary-dark dark:text-ternary-light"
+								className="navClass h-7 w-7 fill-current text-secondary-dark dark:text-ternary-light"
 							>
 								{showMenu ? (
 									<FiX className="text-3xl" />

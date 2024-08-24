@@ -7,7 +7,6 @@ import { motion } from 'framer-motion';
 const ProjectSingle = () => {
 	return (
 		<motion.div
-			initial={{ opacity: 0 }}
 			animate={{ opacity: 1, delay: 1 }}
 			transition={{
 				ease: 'easeInOut',

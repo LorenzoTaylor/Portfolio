@@ -27,8 +27,6 @@ const HireMeModal = ({ onClose, onRequest }) => {
 	
 	return (
 		<motion.div
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
 			exit={{ opacity: 0 }}
 			className="font-general-medium fixed inset-0 z-30 transition-all duration-500"
 		>
