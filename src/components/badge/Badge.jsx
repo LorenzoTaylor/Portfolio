@@ -86,14 +86,14 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
   return (
     <>
       <group position={[0, 4, 0]}>
-        <RigidBody className="no-collide" ref={fixed} {...segmentProps} type="fixed" />
-        <RigidBody className="no-collide" position={[0.5, 0, 0]} ref={j1} {...segmentProps}>
+        <RigidBody ref={fixed} {...segmentProps} type="fixed" />
+        <RigidBody position={[0.5, 0, 0]} ref={j1} {...segmentProps}>
           <BallCollider args={[0.1]} />
         </RigidBody>
-        <RigidBody className="no-collide" position={[1, 0, 0]} ref={j2} {...segmentProps}>
+        <RigidBody position={[1, 0, 0]} ref={j2} {...segmentProps}>
           <BallCollider args={[0.1]} />
         </RigidBody>
-        <RigidBody className="no-collide" position={[1.5, 0, 0]} ref={j3} {...segmentProps}>
+        <RigidBody position={[1.5, 0, 0]} ref={j3} {...segmentProps}>
           <BallCollider args={[0.1]} />
         </RigidBody>
         <RigidBody position={[2, 0, 0]} ref={card} {...segmentProps} type={dragged ? 'kinematicPosition' : 'dynamic'}>
@@ -113,7 +113,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
           </group>
         </RigidBody>
       </group>
-      <mesh ref={band} className="badgeStrap">
+      <mesh ref={band}>
         <meshLineGeometry />
         <meshLineMaterial color="white" depthTest={false} resolution={[width, height]} useMap map={texture} repeat={[-3, 1]} lineWidth={1} />
       </mesh>

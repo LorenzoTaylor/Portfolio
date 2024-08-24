@@ -1,4 +1,34 @@
 .badge-spacer{
     width: 400px !important;
-    height: 400px !important;
+    height: 600px !important;
+}
+
+.zoheader{
+    position: absolute;
+    top: 300px;
+    width: 400px;
+}
+
+
+@media (max-width: 770px) {
+    .badge-spacer{
+        width: 400px !important;
+        height: 800px !important;
+    }
+    .zoheader{
+        top: 700px;
+        align-self: center;
+    }
+    .hi-lorenzo,
+    .im-swe{
+        text-align: center;
+    }
+    
+}
+
+@media (min-width: 635px) and (max-width: 770px){
+    .zoheader{
+        left: 22%;
+    }
+    
 }

@@ -13,14 +13,14 @@ const AppBanner = () => {
 		<motion.section
 			className="flex flex-col sm:justify-between items-center sm:flex-row mt-100 md:mt-2"
 		>
-			<div className="w-full md:w-1/3 text-left mx-20">
+			<div className="zoheader">
 				<motion.h1
 					transition={{
 						ease: 'easeInOut',
 						duration: 0.9,
 						delay: 0.1,
 					}}
-					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
+					className="hi-lorenzo font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
 				>
 					Hi, Im Lorenzo
 				</motion.h1>
@@ -30,7 +30,7 @@ const AppBanner = () => {
 						duration: 0.9,
 						delay: 0.2,
 					}}
-					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
+					className="im-swe font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
 				>
 					Im A Software Engineer Specializing In Front End Web Development.
 				</motion.p>

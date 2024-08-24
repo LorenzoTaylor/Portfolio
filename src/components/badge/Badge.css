@@ -1,20 +1,15 @@
 .lorenzoBadge {
     position: absolute !important;
     height: 900px !important;
-    width: 800px !important;
+    width: 100vw !important;
     z-index: 0 !important;
     top: -100px;
-    right: 5vw;
+    right: -20vw;
+    overflow-x:  hidden !important;
 }
 
-.no-collide {
-    pointer-events: none !important;
-}
-
-.badgeStrap {
-    pointer-events: none !important; /* Make the strap non-interactive */
-}
-
-.badgeInteractive {
-    pointer-events: auto; /* Ensure the rest of the badge is interactive */
+@media (max-width: 770px) {
+    .lorenzoBadge {
+        right: 0vw;
+    }
 }

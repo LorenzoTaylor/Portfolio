@@ -1,3 +1,7 @@
 .navClass{
     z-index: 1000 !important;
 }
+
+#nav{
+    position: absolute;
+}
