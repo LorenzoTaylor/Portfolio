@@ -6,7 +6,10 @@ import { motion } from 'framer-motion';
 
 const About = () => {
 	return (
-		<AboutMeProvider className="my-auto">
+		<>
+		<div className='pt-20'></div>
+		<div className='pt-20'></div>
+		<AboutMeProvider className="my-auto ">
 			<p className="flex text-3xl items-center justify-center my-30 sm:text-4xl text-primary-dark dark:text-primary-light mb-5">
 						About Me
 					</p>
@@ -34,6 +37,7 @@ const About = () => {
 				<AboutClients />
 			</motion.div>
 		</AboutMeProvider>
+		</>
 	);
 };
 

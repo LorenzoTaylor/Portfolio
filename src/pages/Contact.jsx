@@ -4,6 +4,9 @@ import ContactForm from '../components/contact/ContactForm';
 
 const Contact = () => {
 	return (
+		<>
+		<div className='pt-20'></div>
+		<div className='pt-20'></div>
 		<motion.div
 			transition={{
 				ease: 'easeInOut',
@@ -15,6 +18,7 @@ const Contact = () => {
 			<ContactForm />
 			<ContactDetails />
 		</motion.div>
+		</>
 	);
 };
 

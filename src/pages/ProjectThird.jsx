@@ -6,6 +6,9 @@ import { motion } from 'framer-motion';
 
 const ProjectSingle = () => {
 	return (
+		<>
+		<div className='pt-20'></div>
+		<div className='pt-20'></div>
 		<motion.div
 			animate={{ opacity: 1, delay: 1 }}
 			transition={{
@@ -21,6 +24,7 @@ const ProjectSingle = () => {
 				<ProjectInfo />
 			</SingleProjectProvider>
 		</motion.div>
+		</>
 	);
 };
  
